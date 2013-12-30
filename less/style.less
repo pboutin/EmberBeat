@@ -1,0 +1,230 @@
+html, body
+{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.full-container
+{
+  width: 96%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px;
+  height: 100%;
+
+  .row, div[class^="col-lg-"]
+  {
+    height: 100%;
+  }
+}
+
+
+.list-btn, .alpha-list
+{
+  .list-unstyled;
+
+  li
+  {
+    border-radius: @border-radius-base;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    padding: 3px;
+  }
+
+  li:hover
+  {
+    background-color: @gray-lighter;
+  }
+
+  span
+  {
+    display: block;
+    .pull-right;
+  }
+}
+
+.alpha-list
+{
+  position: absolute;
+  top: 0;
+  right: 15px;
+  li
+  {
+    font-size: 0.8em;
+  }
+}
+
+section
+{
+  position: fixed;
+  padding: 15px;
+}
+
+.thumb
+{
+  padding-right: 15px;
+  padding-bottom: 15px;
+  display: inline-block;
+  img
+  {
+    border-radius: @border-radius-large;
+  }
+}
+
+.thumb-small
+{
+  width: 32.5%;
+}
+
+.thumb-big
+{
+  width: 49.5%;
+}
+
+.inbox-wrap
+{
+  position: absolute;
+  top: 75px;
+  left: 15px;
+  right: 15px;
+  bottom: 0;
+
+  .item-wrap
+  {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    overflow-y: auto;
+    height: 100%;
+    width: 100%;
+  }
+
+  .top-gradient
+  {
+    position: absolute;
+    left: 0;
+    right: 10px;
+    top: 0;
+    height: 25px;
+    background: -moz-linear-gradient(top,  @body-bg 0%, rgba(255,255,255,0) 90%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,@body-bg), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  @body-bg 0%,rgba(255,255,255,0) 90%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  @body-bg 0%,rgba(255,255,255,0) 90%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  @body-bg 0%,rgba(255,255,255,0) 90%); /* IE10+ */
+    background: linear-gradient(to bottom,  @body-bg 0%,rgba(255,255,255,0) 90%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7db9e8', endColorstr='#001e5799',GradientType=0 ); /* IE6-9 */
+  }
+
+  .bot-gradient
+  {
+    position: absolute;
+    left: 0;
+    right: 10px;
+    bottom: 0;
+    height: 25px;
+    background: -moz-linear-gradient(top,  rgba(255,255,255,0) 10%, @body-bg 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(100%,@body-bg)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 10%,@body-bg 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(255,255,255,0) 10%,@body-bg 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(255,255,255,0) 10%,@body-bg 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(255,255,255,0) 10%,@body-bg 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+  }
+}
+
+.block-artists
+{
+  top: 50px;
+  left: 0;
+  right: 75%;
+  bottom: 45%;
+}
+
+.block-albums
+{
+  top: 55%;
+  left: 0;
+  right: 75%;
+  bottom: 0;
+  overflow-y: auto;
+}
+
+.block-tracks
+{
+  top: 50px;
+  left: 25%;
+  right: 25%;
+  bottom: 0;
+  overflow-y: auto;
+}
+
+.block-queue
+{
+  top: 50px;
+  left: 75%;
+  right: 0;
+  bottom: 275px;
+  overflow-y: auto;
+}
+
+.block-player
+{
+  height: 275px;
+  left: 75%;
+  right: 0;
+  bottom: 0;
+
+  .btn-nav
+  {
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+    font-size: 26px;
+    margin: 8px;
+    line-height: 44px;
+  }
+
+  .btn-opt
+  {
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    font-size: 15px;
+    line-height: 27px;
+  }
+
+  .btn-primary
+  {
+    height: 76px;
+    width: 76px;
+    border-radius: 38px;
+    font-size: 35px;
+    line-height: 60px;
+  }
+}
+
+h1,h2,h3,h4,h5
+{
+  color: @brand-primary;
+  font-family: 'Metrophobic', sans-serif;
+}
+
+th
+{
+  color: @brand-primary;
+  font-family: 'Metrophobic', sans-serif;
+  font-size: 1.2em;
+  letter-spacing: 3px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: @brand-primary;
+}
