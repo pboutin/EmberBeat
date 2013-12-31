@@ -6,27 +6,24 @@
     <link rel="stylesheet" type="text/less" href="less/bootstrap.less" />
 </head>
 <body>
-<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-
-
-    <div class="col-md-3 nav-sides"><h2>EmberBeat</h2> <em> for Rdio&reg;</em></div>
-
-    <div class="col-md-6 nav-search">
-        <div class="input-group">
-            <span class="input-group-addon"><i class="fa fa-search"></i></span>
-            <input type="text" class="form-control input-lg" placeholder="Search&hellip;" id="search"/></div>
-    </div>
-
-    <div class="col-md-3 nav-sides">
-        <a href="#"><i class="fa fa-gear"></i></a>
-
-        <span class="pull-right"> <h5>Foobar user</h5>
-        <img src="http://placehold.it/30x30" alt="Profile picture" class="img-circle"/>
-</span>
-
-    </div>
-
-</nav>
+<div class="row">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="col-md-3 nav-sides"><h2>EmberBeat</h2> <em> for Rdio&reg;</em></div>
+        <div class="col-md-6 nav-search">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                <input type="text" class="form-control input-lg" placeholder="Search&hellip;" id="search"/></div>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a href="#"><i class="fa fa-download"></i> Offline</a></li>
+            <li><a href="#"><i class="fa fa-gear"></i> Menu</a></li>
+            <!--<li></li>-->
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><i class="fa fa-user"></i> Foobar user</a></li>
+        </ul>
+    </nav>
+</div>
 
 <section class="block-artists">
     <h1 class="table-row">Artists</h1>
