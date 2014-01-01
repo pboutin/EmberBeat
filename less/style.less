@@ -121,6 +121,7 @@ section
 
   .top-gradient
   {
+    pointer-events: none;
     position: absolute;
     left: 0;
     right: 10px;
@@ -137,11 +138,12 @@ section
 
   .bot-gradient
   {
+    pointer-events: none;
     position: absolute;
     left: 0;
     right: 10px;
     bottom: 0;
-    height: 25px;
+    height: 50px;
     background: -moz-linear-gradient(top,  rgba(255,255,255,0) 10%, @body-bg 100%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(100%,@body-bg)); /* Chrome,Safari4+ */
     background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 10%,@body-bg 100%); /* Chrome10+,Safari5.1+ */
@@ -197,15 +199,77 @@ section
   left: 75%;
   right: 0;
   bottom: 0;
+}
 
+h1,h2,h3,h4,h5
+{
+  color: @brand-primary;
+  font-family: 'Metrophobic', sans-serif;
+}
+
+h1
+{
+  margin-top: 0;
+}
+
+th
+{
+  color: @brand-primary;
+  font-family: 'Metrophobic', sans-serif;
+  font-size: 1.2em;
+  letter-spacing: 3px;
+}
+
+::-webkit-scrollbar
+{
+  width: 10px;
+}
+
+
+::-webkit-scrollbar-thumb
+{
+  border-radius: 4px;
+  background-color: @brand-primary;
+}
+
+.btn-nav
+{
+  height: 60px;
+  width: 60px;
+  border-radius: 30px;
+  font-size: 26px;
+  margin: 8px;
+  line-height: 44px;
+}
+
+.btn-opt
+{
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  font-size: 15px;
+  line-height: 27px;
+}
+
+.btn-play
+{
+  height: 76px;
+  width: 76px;
+  border-radius: 38px;
+  font-size: 35px;
+  line-height: 60px;
+}
+
+@media (max-width: 1430px)
+{
   .btn-nav
   {
-    height: 60px;
-    width: 60px;
+    height: 46px;
+    width: 46px;
     border-radius: 30px;
-    font-size: 26px;
+    font-size: 19px;
     margin: 8px;
-    line-height: 44px;
+    line-height: 32px;
   }
 
   .btn-opt
@@ -217,36 +281,12 @@ section
     line-height: 27px;
   }
 
-  .btn-primary
+  .btn-play
   {
-    height: 76px;
-    width: 76px;
+    height: 60px;
+    width: 60px;
     border-radius: 38px;
-    font-size: 35px;
-    line-height: 60px;
+    font-size: 26px;
+    line-height: 48px;
   }
-}
-
-h1,h2,h3,h4,h5
-{
-  color: @brand-primary;
-  font-family: 'Metrophobic', sans-serif;
-}
-
-th
-{
-  color: @brand-primary;
-  font-family: 'Metrophobic', sans-serif;
-  font-size: 1.2em;
-  letter-spacing: 3px;
-}
-
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-
-::-webkit-scrollbar-thumb {
-  border-radius: 4px;
-  background-color: @brand-primary;
 }
